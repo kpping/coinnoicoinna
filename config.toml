@@ -1,0 +1,9 @@
+baseURL = "https://www.coinnoicoinna.com"
+relativeURLs = true
+languageCode = "th"
+title = "คอยน์น้อยแต่คอยน์นะ"
+enableRobotsTXT = true
+
+[params]
+  author = "kpping"
+  description = "เล่าคริปโตง่าย ๆ ให้ทุกคนเข้าใจ"

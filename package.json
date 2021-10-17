@@ -1,0 +1,15 @@
+{
+  "name": "coinnoicoinna",
+  "version": "0.0.1",
+  "description": "Cryptocurrency 101",
+  "scripts": {
+    "test": "npx prettier --check .",
+    "fix": "npx prettier --write ."
+  },
+  "author": "kpping",
+  "license": "kpping",
+  "devDependencies": {
+    "prettier": "2.4.1",
+    "prettier-plugin-go-template": "0.0.11"
+  }
+}
