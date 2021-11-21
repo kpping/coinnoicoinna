@@ -1,9 +1,22 @@
+# https://gohugo.io/variables/site/
+
 baseURL = "https://www.coinnoicoinna.com"
-relativeURLs = true
-languageCode = "th"
-title = "คอยน์น้อยแต่คอยน์นะ"
+copyright = "coinnoicoinna"
 enableRobotsTXT = true
+relativeURLs = true
+title = "คอยน์น้อยแต่คอยน์นะ"
+languageCode = "th"
 
 [params]
-  author = "kpping"
+  author = "coinnoicoinna"
   description = "เล่าคริปโตง่าย ๆ ให้ทุกคนเข้าใจ"
+  homepageKeywords = ["crypto", "cryptocurrency", "investment", "คริปโต", "คริปโตเคอร์เรนซี"]
+
+[related]
+  includeNewer = true
+[[related.indices]]
+  name = 'tags'
+  weight = 100
+[[related.indices]]
+  name = 'categories'
+  weight = 90
