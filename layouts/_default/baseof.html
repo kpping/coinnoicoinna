@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<html>
+<!-- site's lang or content's lang -->
+<html lang="{{ default .Site.LanguageCode (.Params.languageCode) }}">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <!-- logo for various systems -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
@@ -44,14 +49,59 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
+
+    <title>{{ .Title }}</title>
+
+    <!-- site's desc or content's desc -->
+    <meta
+      name="description"
+      content="{{ default .Site.Params.description (.Page.Summary | plainify) }}"
+    />
+
+    <!-- site's author or content's author -->
+    <meta
+      name="author"
+      content="{{ default .Site.Params.author (.Params.author) }}"
+    />
+
+    <meta name="copyright" content="{{ .Site.Title }}" />
+
+    <meta name="license" content="{{ .Site.Copyright }}" />
+
+    {{ $keywords := default .Site.Params.homepageKeywords (.Params.tags) }}
+    <!-- site's keywords or content's keywords -->
+    <meta name="keywords" content="{{ delimit $keywords ", " }}" />
+
+    <!-- bundle critical.scss + normalize.scss + main.scss -->
+    {{ $criticalStyle := resources.Get "sass/critical.scss" | resources.ToCSS }}
+    {{ $normalizeStyle := resources.Get "sass/normalize.scss" | resources.ToCSS }}
+    {{ $mainStyle := resources.Get "sass/main.scss" | resources.ToCSS }}
+    {{ $bundleStyle := (slice $criticalStyle $normalizeStyle $mainStyle | resources.Concat "sass/bundle.css") | resources.Minify |
+      resources.Fingerprint "sha512"
+    }}
+    <link
+      rel="stylesheet"
+      href="{{ $bundleStyle.RelPermalink }}"
+      integrity="{{ $bundleStyle.Data.Integrity }}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.0.0/github-markdown-light.min.css"
+      integrity="sha512-2ZxkJRe/dlKUknBZJNP93bh08JvvuvL+fR6I3IqZ4tnAvNQ0D56+LVg+DvE/S/Ir4J/6lxBu/Xye1z243BEa1Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      media="print"
+      onload="this.media='all'"
+    />
   </head>
+
   <body>
-    <!-- Code that all your templates share, like a header -->
-    {{ block "main" . }}
-      <!-- The part of the page that begins to differ between templates -->
-    {{ end }}
-    {{ block "footer" . }}
-      <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
-    {{ end }}
+    <div id="base-container" class="markdown-body">
+      {{ partial "base-header" . }}
+      {{ block "main" . }}{{ end }}
+      <hr class="thin-line" />
+      {{ partial "base-footer" . }}
+    </div>
   </body>
 </html>
