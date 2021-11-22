@@ -37,6 +37,11 @@ body {
     position: relative;
     top: 2px;
   }
+
+  #base-header-desc {
+    font-style: italic;
+    color: grey;
+  }
 }
 
 #netlify-status {
@@ -107,7 +112,7 @@ body {
 
   img {
     position: relative;
-    top: 4px;
+    top: 6px;
   }
 }
 
