@@ -1,9 +1,6 @@
 <footer>
   <p>
-    &copy;
-    {{ now.Year }}
-    <a href="{{ .Site.BaseURL }}">{{ .Site.Copyright }}</a> |
-    {{ .Site.Params.description }} |
-    {{ partial "facebook" . }}
+    &copy; {{ now.Year }} All Right Reserved | {{ partial "facebook" . }} |
+    {{ partial "netlify-status" . }}
   </p>
 </footer>
