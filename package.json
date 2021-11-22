@@ -6,8 +6,8 @@
     "test": "npx prettier --check .",
     "format": "npx prettier --write ."
   },
-  "author": "kpping",
-  "license": "kpping",
+  "author": "coinnoicoinna",
+  "license": "coinnoicoinna",
   "devDependencies": {
     "prettier": "2.4.1",
     "prettier-plugin-go-template": "0.0.11"
