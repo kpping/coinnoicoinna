@@ -11,6 +11,7 @@ languageCode = "th"
   author = "coinnoicoinna"
   description = "เล่าคริปโตง่าย ๆ ให้ทุกคนเข้าใจ"
   homepageKeywords = ["crypto", "cryptocurrency", "investment", "คริปโต", "คริปโตเคอร์เรนซี"]
+  logo = "/apple-icon-114x114.png"
 
 [related]
   includeNewer = true
