@@ -116,5 +116,21 @@
       <hr class="thin-line" />
       {{ partial "base-footer" . }}
     </div>
+
+    <!-- prettier-ignore -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BH8936H6FE"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-BH8936H6FE");
+    </script>
   </body>
 </html>
