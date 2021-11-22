@@ -120,15 +120,6 @@
       media="print"
       onload="this.media='all'"
     />
-  </head>
-
-  <body>
-    <div id="base-container" class="markdown-body">
-      {{ partial "base-header" . }}
-      {{ block "main" . }}{{ end }}
-      <hr class="thin-line" />
-      {{ partial "base-footer" . }}
-    </div>
 
     <!-- prettier-ignore -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -145,5 +136,14 @@
 
       gtag("config", "G-BH8936H6FE");
     </script>
+  </head>
+
+  <body>
+    <div id="base-container" class="markdown-body">
+      {{ partial "base-header" . }}
+      {{ block "main" . }}{{ end }}
+      <hr class="thin-line" />
+      {{ partial "base-footer" . }}
+    </div>
   </body>
 </html>
