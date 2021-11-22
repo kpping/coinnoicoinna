@@ -1,7 +1,9 @@
 <footer>
   <p>
-    &copy; {{ now.Year }} |
-    <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> |
-    {{ .Site.Params.description }}
+    &copy;
+    {{ now.Year }}
+    <a href="{{ .Site.BaseURL }}">{{ .Site.Copyright }}</a> |
+    {{ .Site.Params.description }} |
+    {{ partial "facebook" . }}
   </p>
 </footer>
