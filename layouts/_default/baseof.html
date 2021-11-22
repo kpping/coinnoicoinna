@@ -72,6 +72,16 @@
     <!-- site's keywords or content's keywords -->
     <meta name="keywords" content="{{ delimit $keywords ", " }}" />
 
+    {{ range .AlternativeOutputFormats -}}
+      <link
+        rel="{{ .Rel }}"
+        type="{{ .MediaType.Type }}"
+        href="{{ .Permalink }}"
+        title="{{ $.Site.Title }}"
+      />
+    {{ end }}
+
+
     <!-- bundle critical.scss + normalize.scss + main.scss -->
     {{ $criticalStyle := resources.Get "sass/critical.scss" | resources.ToCSS }}
     {{ $normalizeStyle := resources.Get "sass/normalize.scss" | resources.ToCSS }}
