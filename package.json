@@ -1,6 +1,6 @@
 {
   "name": "coinnoicoinna",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Cryptocurrency 101",
   "scripts": {
     "test": "npx prettier --check .",
