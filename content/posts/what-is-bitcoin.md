@@ -1,7 +1,7 @@
 ---
 title: "Bitcoin บิตคอยน์ เหรียญบิตคอยน์ คืออะไร"
 date: 2021-11-21T16:22:28+07:00
-draft: true
+draft: false
 categories: [เล่าคริปโต]
 tags: [bitcoin, บิตคอยน์, เหรียญบิตคอยน์, คริปโต, คริปโตเคอร์เรนซี]
 images:
