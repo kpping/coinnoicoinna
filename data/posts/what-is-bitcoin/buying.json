@@ -1,0 +1,25 @@
+{
+  "data_type": "json-figure-picture",
+  "href": "https://coinnoicoinna.files.wordpress.com/2021/11/executium-oqepgkdx3ra-unsplash_q85_r768x.jpg",
+  "src": "https://coinnoicoinna.files.wordpress.com/2021/11/executium-oqepgkdx3ra-unsplash_q85_r400x.jpg",
+  "alt": "bitcoin",
+  "caption": "บิตคอยน์มักถูกวาดเป็นเหรียญ",
+  "height": "267",
+  "width": "400",
+  "loading": "lazy",
+  "source": [
+    {
+      "srcset": "https://coinnoicoinna.files.wordpress.com/2021/11/executium-oqepgkdx3ra-unsplash_q85_r768x.jpg 2x, https://coinnoicoinna.files.wordpress.com/2021/11/executium-oqepgkdx3ra-unsplash_q85_r400x.jpg",
+      "media": "(min-width: 400px)"
+    },
+    {
+      "srcset": "https://coinnoicoinna.files.wordpress.com/2021/11/executium-oqepgkdx3ra-unsplash_q85_r400x.jpg 2x, https://coinnoicoinna.files.wordpress.com/2021/11/executium-oqepgkdx3ra-unsplash_q85_r200x.jpg 1x",
+      "media": "(min-width: 200px)"
+    },
+    {
+      "srcset": "https://coinnoicoinna.files.wordpress.com/2021/11/executium-oqepgkdx3ra-unsplash_q85_r200x.jpg 2x, https://coinnoicoinna.files.wordpress.com/2021/11/executium-oqepgkdx3ra-unsplash_q85_r100x.jpg 1x",
+      "media": "(min-width: 100px)"
+    }
+  ],
+  "_raw": "https://unsplash.com/photos/OqEPgkdX3RA"
+}
