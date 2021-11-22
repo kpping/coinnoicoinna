@@ -72,6 +72,9 @@
     <!-- site's keywords or content's keywords -->
     <meta name="keywords" content="{{ delimit $keywords ", " }}" />
 
+    <!-- application/ld+json -->
+    {{ partial "jsonld" . }}
+
     {{ range .AlternativeOutputFormats -}}
       <link
         rel="{{ .Rel }}"
