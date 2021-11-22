@@ -40,7 +40,7 @@ body {
 
   #base-header-desc {
     font-style: italic;
-    color: grey;
+    color: $base-header-desc-color;
   }
 }
 
@@ -86,6 +86,10 @@ body {
     @include respond-to("md") {
       width: 50%;
     }
+  }
+
+  figcaption {
+    color: $figcaption-color;
   }
 }
 
