@@ -75,6 +75,10 @@
     <!-- application/ld+json -->
     {{ partial "jsonld" . }}
 
+
+    <!-- facebook meta -->
+    {{ partial "facebook-meta" . }}
+
     {{ range .AlternativeOutputFormats -}}
       <link
         rel="{{ .Rel }}"
