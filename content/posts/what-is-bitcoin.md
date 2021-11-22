@@ -117,11 +117,13 @@ images:
 
 อย่าเชื่อใจคนง่าย ใครชวนลงทุนให้ตรวจสอบให้รอบครอบ การจะเข้าซื้อหรือขายเป็นสิทธิของเรา ฟังได้แต่ต้องคิดวิเคราะห์ตาม
 
+หากมีข้อสงสัย/แนะนำ ติดต่อพูดคุยกันได้ทั้งผ่านอีเมล [coinnoicoinna@protonmail.com](mailto:coinnoicoinna@protonmail.com) หรือที่ [Facebook คอยน์น้อยแต่คอยน์นะ](https://www.facebook.com/coinnoicoinna) ได้ครับ ขอบคุณครับ
+
+## สนับสนุนบทความ
+
 สำหรับคนที่อ่านแล้วสนใจอยากเริ่มต้นลงทุน สามารถกดสมัครเข้าใช้ตลาดผ่านลิ้งค์ที่แปะนี้ได้เลยนะครับ
 
 - ซิปเม็กซ์ (Zipmex) [https://trade.zipmex.com/th/accounts/sign-up?aff=B4WPumRMb8](https://trade.zipmex.com/th/accounts/sign-up?aff=B4WPumRMb8) หรือ
 - บิทคับ (Bitkub) [https://www.bitkub.com/signup?ref=1640430](https://www.bitkub.com/signup?ref=1640430)
 
-เพราะผมและคุณผู้อ่านจะได้ค่าขนมเล็กน้อยจากการเชิญชวนสมัครใช้งานครับ
-
-หากมีข้อสงสัย/แนะนำ ติดต่อพูดคุยกันได้ทั้งผ่านอีเมล [coinnoicoinna@protonmail.com](mailto:coinnoicoinna@protonmail.com) หรือที่ [Facebook คอยน์น้อยแต่คอยน์นะ](https://www.facebook.com/coinnoicoinna) ได้ครับ ขอบคุณครับ
+เพราะผมและคุณผู้อ่านจะได้ค่าขนมเล็กน้อยจากการเชิญชวนสมัครใช้งานครับ ❤️
