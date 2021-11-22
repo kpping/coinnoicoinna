@@ -6,10 +6,11 @@ Cryptocurrency 101. เล่าคริปโตง่าย ๆ ให้ท�
 
 ## Version
 
-0.0.1
+1.0.0
 
 ## Change logs
 
-| Version | Detail       |
-| ------- | ------------ |
-| 0.0.1   | init project |
+| Version | Detail          |
+| ------- | --------------- |
+| 1.0.0   | release website |
+| 0.0.1   | init project    |
