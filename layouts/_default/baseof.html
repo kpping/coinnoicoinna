@@ -85,11 +85,10 @@
     {{ end }}
 
 
-    <!-- bundle critical.scss + normalize.scss + main.scss -->
+    <!-- bundle critical.scss + main.scss -->
     {{ $criticalStyle := resources.Get "sass/critical.scss" | resources.ToCSS }}
-    {{ $normalizeStyle := resources.Get "sass/normalize.scss" | resources.ToCSS }}
     {{ $mainStyle := resources.Get "sass/main.scss" | resources.ToCSS }}
-    {{ $bundleStyle := (slice $criticalStyle $normalizeStyle $mainStyle | resources.Concat "sass/bundle.css") | resources.Minify |
+    {{ $bundleStyle := (slice $criticalStyle $mainStyle | resources.Concat "sass/bundle.css") | resources.Minify |
       resources.Fingerprint "sha512"
     }}
     <link
